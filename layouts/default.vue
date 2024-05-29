@@ -5,11 +5,7 @@
 				<slot />
 			</v-container>
 		</v-main>
-		<div>
-			<v-footer :absolute="false" app>
-				<span>&copy; {{ new Date().getFullYear() }}</span>
-			</v-footer>
-		</div>
 
+		<LayoutFooter />
 	</v-layout>
 </template>
