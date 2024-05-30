@@ -1,7 +1,7 @@
 <template>
 	<v-layout>
 		<v-main>
-			<v-container fluid>
+			<v-container style="width:80%" fluid>
 				<slot />
 			</v-container>
 		</v-main>
