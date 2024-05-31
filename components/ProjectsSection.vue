@@ -3,23 +3,36 @@
 		<SectionTitle title="🚀 Projects">
 			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor">visit Github</a>
 		</SectionTitle>
-		<v-container fluid>
-			<v-row no-gutters>
-				<v-col v-for="project in projects" :key="project.title" xs="12" sm="12" md="6" lg="4">
-					<ProjectCard :project="project" />
-				</v-col>
-			</v-row>
-		</v-container>
+
+		<v-tabs v-model="tab" align-tabs="center" color="deep-purple-accent-4">
+			<v-tab v-for="value in tabValues" :key="value" :value="value">{{ value }}</v-tab>
+		</v-tabs>
+
+		<v-tabs-window v-model="tab">
+			<v-tabs-window-item v-for="value in tabValues" :key="value" :value="value">
+				<v-container fluid>
+					<v-row no-gutters>
+						<v-col v-for="project in categorizedProjects[value]" :key="project.title" xs="12" sm="12" md="6" lg="4">
+							<ProjectCard :project="project" />
+						</v-col>
+					</v-row>
+				</v-container>
+			</v-tabs-window-item>
+			
+		</v-tabs-window>
 	</div>
 </template>
 <script>
 export default {
 	data: () => {
 		return {
+			tabValues: ['personal', 'work'],
+			tab: null,
 			githubProfile: "https://github.com/naseem-shawarba",
 			projects: [
 				{
 					title: "Random Recipe Generator",
+					type: "personal",
 					description:
 						"Random Recipe Generator is a responsive web application that generates random recipes.",
 					screenshot:
@@ -32,6 +45,7 @@ export default {
 				},
 				{
 					title: "Movie Look Up",
+					type: "personal",
 					description:
 						"Movie Look Up is a responsive web app that provides information about movies",
 					screenshot:
@@ -44,6 +58,7 @@ export default {
 				},
 				{
 					title: "Petri Mensa",
+					type: "personal",
 					description:
 						"Petri Mensa Game is an educational game based on Petri nets",
 					screenshot:
@@ -57,6 +72,7 @@ export default {
 
 				{
 					title: "SMTP Server Lite",
+					type: "personal",
 					description:
 						"SMTP Server Lite is a lightweight implementation of an SMTP server in Java using NIO (Non-blocking I/O).",
 					screenshot:
@@ -69,6 +85,7 @@ export default {
 				},
 				{
 					title: "Sorting Algorithms Implementations",
+					type: "personal",
 					description:
 						"About Exploring famous sorting algorithms by implementing them from scratch",
 					screenshot:
@@ -81,6 +98,7 @@ export default {
 				},
 				{
 					title: "Data Structures Implementations",
+					type: "personal",
 					description:
 						"About Exploring famous data structures by implementing them from scratch",
 					screenshot:
@@ -93,6 +111,7 @@ export default {
 				},
 				{
 					title: "Dive Surf Enterprise Integration",
+					type: "personal",
 					description:
 						"Integrate systems at Dive-Surf Co., enabling seamless order processing, billing, and inventory management through Enterprise Application Integration patterns.",
 					screenshot:
@@ -108,6 +127,16 @@ export default {
 			],
 		};
 	},
+	computed: {
+		categorizedProjects() {
+			const personalProjects = this.projects.filter((project) => project.type === "personal")
+			const workProjects = this.projects.filter((project) => project.type === "work")
+			return {
+				"personal": personalProjects,
+				"work": workProjects
+			}
+		}
+	}
 };
 </script>
 
