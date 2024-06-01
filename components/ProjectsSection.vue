@@ -175,7 +175,13 @@ export default {
 				"work": workProjects
 			}
 		}
-	}
+	},
+	mounted(){
+		if(this.$route.query?.tab){
+			this.tab=this.$route.query.tab
+		}
+		
+	},
 };
 </script>
 
