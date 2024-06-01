@@ -69,6 +69,19 @@ export default {
 					githubLink: "https://github.com/naseem-shawarba/Petri_Mensa_Game",
 					deployedWebsite: "https://petri-mensa.web.app/"
 				},
+				{
+					title: "Time Displayer",
+					type: "personal",
+					description:
+						"Time Displayer is a simple cross-platform app that displays the time in both landscape and portrait orientations.",
+					screenshot:
+						"https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Time_Displayer_Lite/Screenshot1.png?raw=true",
+					technologies: [
+						"Flutter", "Dart"
+					],
+					githubLink: "https://github.com/naseem-shawarba/Time_Displayer_Lite",
+					deployedWebsite: "https://time-displayer-lite.web.app/"
+				},
 
 				{
 					title: "SMTP Server Lite",
@@ -121,6 +134,32 @@ export default {
 					],
 					githubLink: "https://github.com/naseem-shawarba/Dive_Surf_Enterprise_Integration",
 					deployedWebsite: ""
+				},
+				{
+					title: "TRAZPEZE Dashboard",
+					type: "work",
+					description:
+						"Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
+					screenshot:
+						"https://api.pikwy.com/web/6659c3243e077f2d7f045ca4.jpg",
+					technologies: [
+						"Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript"
+					],
+					githubLink: "",
+					deployedWebsite: "https://dashboard.trapeze-project.eu/"
+				},
+				{
+					title: "TRAZPEZE Mobile App",
+					type: "work",
+					description:
+						"The TRAPEZE Mobile App, available for Android devices, scans for malware, offering guidance on resolving and preventing such threats.",
+					screenshot:
+						"https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
+					technologies: [
+						"Flutter","Dart"
+					],
+					githubLink: "https://github.com/trapeze-project/trapeze-mobile",
+					deployedWebsite: "https://dashboard.trapeze-project.eu/"
 				},
 
 
