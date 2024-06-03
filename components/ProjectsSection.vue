@@ -10,15 +10,15 @@
 
 		<v-tabs-window v-model="tab">
 			<v-tabs-window-item v-for="value in tabValues" :key="value" :value="value">
-				<v-container fluid>
-					<v-row no-gutters>
-						<v-col v-for="project in categorizedProjects[value]" :key="project.title" xs="12" sm="12" md="6" lg="4">
-							<ProjectCard :project="project" />
-						</v-col>
-					</v-row>
-				</v-container>
+				<masonry-wall :items="categorizedProjects[value]" :ssr-columns="1" :gap="1" :max-columns="2">
+					<template #default="{ item }">
+						<div>
+							<ProjectCard :project="item" />
+						</div>
+					</template>
+				</masonry-wall>
 			</v-tabs-window-item>
-			
+
 		</v-tabs-window>
 	</div>
 </template>
@@ -156,7 +156,7 @@ export default {
 					screenshot:
 						"https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
 					technologies: [
-						"Flutter","Dart"
+						"Flutter", "Dart"
 					],
 					githubLink: "https://github.com/trapeze-project/trapeze-mobile",
 					deployedWebsite: "https://dashboard.trapeze-project.eu/"
@@ -176,11 +176,11 @@ export default {
 			}
 		}
 	},
-	mounted(){
-		if(this.$route.query?.tab){
-			this.tab=this.$route.query.tab
+	mounted() {
+		if (this.$route.query?.tab) {
+			this.tab = this.$route.query.tab
 		}
-		
+
 	},
 };
 </script>
