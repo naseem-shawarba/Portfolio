@@ -19,8 +19,11 @@
 						<v-card-title class="font-weight-bold">Dont be a stranger!👋</v-card-title>
 						<v-card-text class="">Connect with me online</v-card-text>
 						<v-card-actions class="pl-0">
-							<v-btn v-for="account in accounts" :key="account.title" :prepend-icon="account.icon"
+
+							<div class="d-flex flex-wrap">
+								<v-btn v-for="account in accounts" :key="account.title" :prepend-icon="account.icon"
 								:href="account.link" target="_blank" class="mx-2" :text="account.title"/>
+							</div>
 						</v-card-actions>
 					</v-card>
 				</v-col>
