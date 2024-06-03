@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<SectionTitle title="🚀 Projects">
-			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor">visit Github</a>
+			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor">Visit Github</a>
 		</SectionTitle>
 
 		<v-tabs v-model="tab" align-tabs="center" color="deep-purple-accent-4">
