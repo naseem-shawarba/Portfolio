@@ -2,7 +2,7 @@
 	<div>
 		<v-alert id="message" class="mb-2" color="orange" icon="mdi-hammer" theme="dark"
 			title="Website Still Under Construction..." closable />
-		<AboutMeSection id="about-me"/>
+		<AboutMeSection v-show="false" id="about-me"/>
 		<ProjectsSection id="projects"/>
 		<ContactSection id="contact"/>
 	</div>
