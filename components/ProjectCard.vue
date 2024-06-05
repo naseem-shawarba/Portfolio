@@ -22,6 +22,8 @@
 					<v-spacer></v-spacer>
 					<v-btn v-if="project.deployedWebsite" class="align-self-end mb-1 mr-2" flat density="compact"
 						icon="mdi-open-in-new" :href="project.deployedWebsite" target="_blank"></v-btn>
+					<v-btn v-if="project.DeployedAndroidApp" class="align-self-end mb-1 mr-1" flat density="compact"
+						icon="mdi-google-play" :href="project.DeployedAndroidApp" target="_blank"></v-btn>
 					<v-btn v-if="project.githubLink" class="align-self-end mb-1 mr-1" flat density="compact"
 						icon="mdi-github" :href="project.githubLink" target="_blank"></v-btn>
 				</div>
