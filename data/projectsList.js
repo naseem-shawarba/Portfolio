@@ -11,7 +11,7 @@ export default [
       "Vuetify.js 3",
       "Pinia",
       "Nuxt.js 3",
-      "JavaScript",
+      "JavaScript"
     ],
     githubLink: "https://github.com/naseem-shawarba/Random_Recipe_Generator_V2",
     deployedWebsite: "https://random-recipe-generator-v2.web.app/",
@@ -20,7 +20,7 @@ export default [
     title: "Movie Look Up",
     type: "personal",
     description:
-      "Movie Look Up is a responsive web app that provides information about movies",
+      "Movie Look Up is a responsive web app that provides information about movies.",
     screenshot:
       "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Movie_Look_Up/Screenshot1.png?raw=true",
     technologies: [
@@ -28,7 +28,7 @@ export default [
       "Vuetify.js 2",
       "Vuex",
       "Nuxt.js 2",
-      "JavaScript",
+      "JavaScript"
     ],
     githubLink: "https://github.com/naseem-shawarba/Movie_Look_Up",
     deployedWebsite: "https://movie-look-up-55990.web.app/",
@@ -36,7 +36,7 @@ export default [
   {
     title: "Petri Mensa",
     type: "personal",
-    description: "Petri Mensa Game is an educational game based on Petri nets",
+    description: "Petri Mensa Game is an educational game based on Petri nets.",
     screenshot:
       "https://pr.mtv.tu-berlin.de/screenshots/2022sose/petrimensa.png",
     technologies: ["Phaser.js", "TypeScript"],
@@ -53,8 +53,23 @@ export default [
     technologies: ["Flutter", "Dart"],
     githubLink: "https://github.com/naseem-shawarba/Time_Displayer_Lite",
     deployedWebsite: "https://time-displayer-lite.web.app/",
+    DeployedAndroidApp:"https://play.google.com/store/apps/details?id=com.sudosnow.time_displayer_lite&hl=gsw&gl=US"
   },
-
+  // {
+  //   title: "Portfolio",
+  //   type: "personal",
+  //   description:
+  //     "This portfolio includes information about my background and skills, showcases the projects I've worked on, and provides ways to connect with me. Please note that the website is still under construction.",
+  //   screenshot:
+  //     "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Portfolio/Screenshot1.png?raw=true",
+  //   technologies: [
+  //     "Vue.js 3",
+  //     "Vuetify.js 3",
+  //     "Nuxt.js 3",
+  //     "TypeScript"],
+  //   githubLink: "https://github.com/naseem-shawarba/Portfolio",
+  //   deployedWebsite: "https://naseem-shawarba.web.app/",
+  // },
   {
     title: "SMTP Server Lite",
     type: "personal",
@@ -69,7 +84,7 @@ export default [
     title: "Sorting Algorithms Implementations",
     type: "personal",
     description:
-      "About Exploring famous sorting algorithms by implementing them from scratch",
+      "About Exploring famous sorting algorithms by implementing them from scratch.",
     screenshot: "",
     technologies: ["C"],
     githubLink:
@@ -80,7 +95,7 @@ export default [
     title: "Data Structures Implementations",
     type: "personal",
     description:
-      "About Exploring famous data structures by implementing them from scratch",
+      "About Exploring famous data structures by implementing them from scratch.",
     screenshot: "",
     technologies: ["C"],
     githubLink:
@@ -117,6 +132,6 @@ export default [
       "https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
     technologies: ["Flutter", "Dart"],
     githubLink: "https://github.com/trapeze-project/trapeze-mobile",
-    deployedWebsite: "https://dashboard.trapeze-project.eu/",
+    deployedWebsite: "https://github.com/trapeze-project/trapeze-mobile/releases",
   },
 ];
