@@ -9,7 +9,7 @@
 		</v-tabs>
 
 		<v-tabs-window v-model="tab">
-			<v-tabs-window-item v-for="value in tabValues" :key="value" :value="value">
+			<v-tabs-window-item class="mx-6 mt-3" v-for="value in tabValues" :key="value" :value="value">
 				<masonry-wall :items="categorizedProjects[value]" :ssr-columns="1" :gap="1" :max-columns="2">
 					<template #default="{ item }">
 						<div>

@@ -60,4 +60,11 @@ export default {
 	height: 100%;
 	object-fit: contain;
 }
+.v-card{
+	transition: transform 0.3s ease;
+}
+.v-card:hover{
+	transform: scale(1.02);
+}
+
 </style>
