@@ -17,7 +17,7 @@
 						{{ technologie }}
 					</v-chip>
 
-					<span class="ml-auto">
+					<span class="ml-auto mt-1">
 						<v-btn v-if="project.deployedWebsite" class=" ml-4 mr-2" flat density="compact"
 							icon="mdi-open-in-new" :href="project.deployedWebsite" target="_blank"></v-btn>
 						<v-btn v-if="project.DeployedAndroidApp" class="align-self-end mr-1" flat density="compact"
