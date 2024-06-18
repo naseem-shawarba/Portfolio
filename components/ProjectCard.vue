@@ -3,7 +3,7 @@
 		<v-hover v-slot="{ isHovering, props }" close-delay="150">
 			<v-card style="border-radius: 20px" :class="['ma-3', { 'on-hover': isHovering }]"
 				:elevation="isHovering ? 16 : 2" v-bind="props">
-				<v-img class="mt-0 zoom-cursor" @click="dialog = !dialog" :src="project.screenshot"></v-img>
+				<v-img class="mt-0" :src="project.screenshot"></v-img>
 
 				<v-card-title class="pt-3 text-wrap">
 					{{ project.title }}
@@ -28,11 +28,6 @@
 				</div>
 			</v-card>
 		</v-hover>
-		<v-dialog v-model="dialog" max-width="80%">
-			<v-card>
-				<v-img :src="project.screenshot" class="full-screen-img"></v-img>
-			</v-card>
-		</v-dialog>
 	</div>
 </template>
 
@@ -40,19 +35,11 @@
 export default {
 	props: {
 		project: Object,
-	},
-	data() {
-		return {
-			dialog: false,
-		};
-	},
+	}
 };
 </script>
 
 <style scoped>
-.zoom-cursor {
-	cursor: zoom-in;
-}
 
 .full-screen-img {
 	width: 100%;
