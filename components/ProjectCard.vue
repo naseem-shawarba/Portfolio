@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<v-hover v-slot="{ isHovering, props }" close-delay="150">
-			<v-card style="border-radius: 20px" :class="['ma-3', { 'on-hover': isHovering }]"
+			<v-card :href="project.deployedWebsite" target="_blank" style="border-radius: 20px" :class="['ma-3', { 'on-hover': isHovering }]"
 				:elevation="isHovering ? 16 : 2" v-bind="props">
 				<v-img class="mt-0" :src="project.screenshot"></v-img>
 
