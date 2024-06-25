@@ -10,28 +10,21 @@
 
 		<v-tabs-window v-model="tab">
 			<v-tabs-window-item class="mx-6 mt-3" v-for="value in tabValues" :key="value" :value="value">
-				<masonry-wall :items="categorizedProjects[value]" :ssr-columns="1" :gap="1" :max-columns="2">
-					<template #default="{ item }">
-						<div>
-							<ProjectCard :project="item" />
-						</div>
-					</template>
-				</masonry-wall>
+				<ProjectsView :projects="categorizedProjects[value]"/>
 			</v-tabs-window-item>
-
 		</v-tabs-window>
 	</div>
 </template>
 <script>
 import projectsList from '~/data/projectsList.js';
 export default {
-	
+
 	data: () => {
 		return {
 			tabValues: ['personal', 'work'],
 			tab: null,
 			githubProfile: "https://github.com/naseem-shawarba",
-			projects: projectsList
+			projects: projectsList,
 		};
 	},
 	computed: {
@@ -42,13 +35,12 @@ export default {
 				"personal": personalProjects,
 				"work": workProjects
 			}
-		}
+		},
 	},
 	mounted() {
 		if (this.$route.query?.tab) {
 			this.tab = this.$route.query.tab
 		}
-
 	},
 };
 </script>
