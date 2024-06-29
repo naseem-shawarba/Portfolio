@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section id="about-me">
 		<SectionTitle title="🧑‍💻 About Me" />
-	</div>
+	</section>
 </template>

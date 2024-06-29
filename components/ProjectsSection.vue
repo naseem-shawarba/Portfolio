@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section id="projects">
 		<SectionTitle title="🚀 Projects">
 			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor">Visit Github</a>
 		</SectionTitle>
@@ -13,7 +13,7 @@
 				<ProjectsView :projects="categorizedProjects[value]"/>
 			</v-tabs-window-item>
 		</v-tabs-window>
-	</div>
+	</section>
 </template>
 <script>
 import projectsList from '~/data/projectsList.js';

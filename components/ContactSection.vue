@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section id="contact">
 		<SectionTitle title="📭 Contact" />
 		<v-container fluid>
 			<v-row no-gutters class="mb-4">
@@ -29,7 +29,7 @@
 				</v-col>
 			</v-row>
 		</v-container>
-	</div>
+	</section>
 </template>
 <script>
 export default {
