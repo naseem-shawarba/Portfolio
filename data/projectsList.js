@@ -1,6 +1,25 @@
 export default [
   {
-    title: "Random Recipe Generator",
+    title: "Cinema Movies",
+    type: "personal",
+    description:
+      "Browse movie categories, find your favorite films, and instantly watch trailers by clicking on them.",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Cinema_Movies/Screenshot1.png?raw=true",
+    technologies: [
+      "React.js 18",
+      "Material UI (MUI)",
+      "Tailwind CSS",
+      "Recoil",
+      "Next.js 14",
+      "TypeScript",
+      "Fetch API",
+    ],
+    githubLink: "https://github.com/naseem-shawarba/Cinema_Movies",
+    deployedWebsite: "https://cinema-movies-seven.vercel.app/",
+  },
+  {
+    title: "Random Recipe Generator V2",
     type: "personal",
     description:
       "Random Recipe Generator is a responsive web application that generates random recipes.",
@@ -11,7 +30,8 @@ export default [
       "Vuetify.js 3",
       "Pinia",
       "Nuxt.js 3",
-      "JavaScript"
+      "JavaScript",
+      "Fetch API",
     ],
     githubLink: "https://github.com/naseem-shawarba/Random_Recipe_Generator_V2",
     deployedWebsite: "https://random-recipe-generator-v2.web.app/",
@@ -28,7 +48,8 @@ export default [
       "Vuetify.js 2",
       "Vuex",
       "Nuxt.js 2",
-      "JavaScript"
+      "JavaScript",
+      "Axios",
     ],
     githubLink: "https://github.com/naseem-shawarba/Movie_Look_Up",
     deployedWebsite: "https://movie-look-up-55990.web.app/",
@@ -44,6 +65,17 @@ export default [
     deployedWebsite: "https://petri-mensa.web.app/",
   },
   {
+    title: "News Reader AI",
+    type: "personal",
+    description:
+      "Welcome to News Reader AI, where AI brings the news to you. Simply speak to the AI assistant to hear the latest headlines and stories read aloud",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/New_Reader_AI/Screenshot2.png?raw=true",
+    technologies: ["React 16", "Material UI (MUI)", "Alan AI", "JavaScript"],
+    githubLink: "https://github.com/naseem-shawarba/News_Reader_AI",
+    deployedWebsite: "https://news-reader-alan-ai-111.netlify.app/",
+  },
+  {
     title: "Time Displayer",
     type: "personal",
     description:
@@ -53,22 +85,37 @@ export default [
     technologies: ["Flutter", "Dart"],
     githubLink: "https://github.com/naseem-shawarba/Time_Displayer_Lite",
     deployedWebsite: "https://time-displayer-lite.web.app/",
-    DeployedAndroidApp:"https://play.google.com/store/apps/details?id=com.sudosnow.time_displayer_lite&hl=gsw&gl=US"
+    DeployedAndroidApp:
+      "https://play.google.com/store/apps/details?id=com.sudosnow.time_displayer_lite&hl=gsw&gl=US",
+  },
+  {
+    title: "Portfolio",
+    type: "personal",
+    description:
+      "This portfolio includes information about my background and skills, showcases the projects I've worked on, and provides ways to connect with me. Please note that the website is still under construction.",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Portfolio/Screenshot1.png?raw=true",
+    technologies: ["Vue.js 3", "Vuetify.js 3", "Nuxt.js 3", "TypeScript"],
+    githubLink: "https://github.com/naseem-shawarba/Portfolio",
+    deployedWebsite: "https://naseem-shawarba.web.app/",
   },
   // {
-  //   title: "Portfolio",
+  //   title: "Random Recipe Generator",
   //   type: "personal",
   //   description:
-  //     "This portfolio includes information about my background and skills, showcases the projects I've worked on, and provides ways to connect with me. Please note that the website is still under construction.",
+  //     "Random Recipe Generator is a responsive web application that generates random recipes.",
   //   screenshot:
-  //     "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Portfolio/Screenshot1.png?raw=true",
+  //     "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Random_Recipe_Generator/Screenshot1.png?raw=true",
   //   technologies: [
-  //     "Vue.js 3",
-  //     "Vuetify.js 3",
-  //     "Nuxt.js 3",
-  //     "TypeScript"],
-  //   githubLink: "https://github.com/naseem-shawarba/Portfolio",
-  //   deployedWebsite: "https://naseem-shawarba.web.app/",
+  //     "Vue.js 2",
+  //     "Vuetify.js 2",
+  //     "Vuex",
+  //     "Nuxt.js 2",
+  //     "JavaScript",
+  //     "Fetch API",
+  //   ],
+  //   githubLink: "https://github.com/naseem-shawarba/Random_Recipe_Generator",
+  //   deployedWebsite: "https://random-recipe-generator-dc70e.web.app/",
   // },
   {
     title: "SMTP Server Lite",
@@ -132,6 +179,7 @@ export default [
       "https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
     technologies: ["Flutter", "Dart"],
     githubLink: "https://github.com/trapeze-project/trapeze-mobile",
-    deployedWebsite: "https://github.com/trapeze-project/trapeze-mobile/releases",
+    deployedWebsite:
+      "https://github.com/trapeze-project/trapeze-mobile/releases",
   },
 ];
