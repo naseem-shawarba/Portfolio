@@ -1,7 +1,7 @@
 <template>
 	<section id="contact">
 		<SectionTitle title="📭 Contact" />
-		<v-container fluid>
+		<v-container fluid style="margin-left: 5px;">
 			<v-row no-gutters class="mb-4">
 				<v-col xs="12" sm="12" md="8" lg="10">
 					<v-card :elevation="0">
