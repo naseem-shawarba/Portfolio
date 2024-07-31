@@ -20,7 +20,6 @@
 				</div>
 				<v-card-title class="pt-3 text-wrap">
 					{{ project.title }}
-					<!-- <a class="ml-1" href="https://github.com/naseem-shawarba/Petri_Mensa_Game" target="_blank">view</a> -->
 				</v-card-title>
 				<v-card-subtitle class="pb-0 text-wrap mb-2">
 					{{ project.description }}
@@ -58,9 +57,6 @@ export default {
 </script>
 
 <style scoped>
-.v-img__img {
-  height:100px !important;
-}
 .v-card {
 	transition: transform 0.3s ease;
 }
