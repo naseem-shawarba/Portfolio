@@ -1,10 +1,23 @@
 <template>
 	<div>
 		<v-hover v-slot="{ isHovering, props }" close-delay="150">
-			<v-card :href="project.deployedWebsite" target="_blank" style="border-radius: 20px" :class="['ma-3', { 'on-hover': isHovering }]"
+			<v-card :href="project.deployedWebsite" target="_blank" style="border-radius: 13px" :class="['ma-3', { 'on-hover': isHovering }]"
 				:elevation="isHovering ? 16 : 2" v-bind="props">
-				<v-img class="mt-0" :src="project.screenshot"></v-img>
 
+				<div v-if="project.screenshot">
+					<div>
+						<v-img @load="isImageLoaded = true" :src="project.screenshot" />
+					</div>
+					<div v-if="!isImageLoaded" style="height: 27vh;">
+						<div class="d-flex align-center justify-center fill-height">
+							<v-progress-circular
+								align-self-center
+								color="grey-lighten-5"
+								indeterminate
+							/>
+						</div>
+					</div>
+				</div>
 				<v-card-title class="pt-3 text-wrap">
 					{{ project.title }}
 					<!-- <a class="ml-1" href="https://github.com/naseem-shawarba/Petri_Mensa_Game" target="_blank">view</a> -->
@@ -35,18 +48,19 @@
 export default {
 	props: {
 		project: Object,
+	},
+	data(){
+		return {
+			isImageLoaded:false
+		}
 	}
 };
 </script>
 
 <style scoped>
-
-.full-screen-img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+.v-img__img {
+  height:100px !important;
 }
-
 .v-card {
 	transition: transform 0.3s ease;
 }
