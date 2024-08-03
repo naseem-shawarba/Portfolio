@@ -1,5 +1,6 @@
 <template>
   <div>
+      <LayoutNotification ref="notification"/>
       <form @submit.prevent="submitForm">
           <v-text-field label="Full Name" type="text" name="name" v-model="name" rounded variant="outlined" required />
           <v-text-field label="Email" type="email" name="email" v-model="email" rounded variant="outlined" required />
@@ -37,7 +38,10 @@ export default {
     },
     async submitForm() {
       if(!this.hCaptchaResponse){
-        alert("Please complete the hCaptcha verification.");
+        this.$refs.notification.showNotification(
+          "Please complete the hCaptcha verification.",
+          "orange"
+        );
         return;
       }
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -57,10 +61,16 @@ export default {
       });
       const result = await response.json();
       if (result.success) {
-        alert("Message Sent")
+        this.$refs.notification.showNotification(
+          "Message sent.",
+          "green"
+        );
         this.messageSent = true
       }else{
-        alert("Please try again later")
+        this.$refs.notification.showNotification(
+          "Unable to send the message. Please try again later.",
+          "orange"
+        );
       }
     },
   },
