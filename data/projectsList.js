@@ -89,6 +89,40 @@ export default [
       "https://play.google.com/store/apps/details?id=com.sudosnow.time_displayer_lite&hl=gsw&gl=US",
   },
   {
+    title: "URL Shortener",
+    type: "personal",
+    description:
+      "The website shortens long URLs for easy sharing. It features a simple interface and tracks short URL access.",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/URL_Shortener/Screenshot1.png?raw=true",
+    technologies: ["Express.js", "MongoDB","JavaScript", "EJS"],
+    githubLink: "https://github.com/naseem-shawarba/URL_Shortener",
+    deployedWebsite: "",
+    DeployedAndroidApp:"",
+  },
+  {
+    title: "Music Player",
+    type: "personal",
+    description:
+      "Discover and play your favorite songs with our Music Player Website. Search music, explore new tunes, and enjoy tracks from your favorite artists effortlessly.",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/raw/main/Music_Player/Screenshot1.png?raw=true",
+    technologies: ["React", "Tailwind CSS", "Redux", "JavaScript", "Rapid API"],
+    githubLink: "https://github.com/naseem-shawarba/Music_Player",
+    deployedWebsite: "https://music-player-klasdg.netlify.app/",
+  },
+  {
+    title: "Contact Form",
+    type: "personal",
+    description:
+      "A simple website with a contact form secured by hCaptcha. Messages are sent directly to the website owner's email using Web3Forms API",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Contact_Form/Screenshot1.png?raw=true",
+    technologies: ["HTML", "CSS", "API Call"],
+    githubLink: "https://github.com/naseem-shawarba/Contact_Form",
+    deployedWebsite: "https://naseem-contact-form.netlify.app/",
+  },
+  {
     title: "Portfolio",
     type: "personal",
     description:
@@ -99,24 +133,39 @@ export default [
     githubLink: "https://github.com/naseem-shawarba/Portfolio",
     deployedWebsite: "https://naseem-shawarba.web.app/",
   },
-  // {
-  //   title: "Random Recipe Generator",
-  //   type: "personal",
-  //   description:
-  //     "Random Recipe Generator is a responsive web application that generates random recipes.",
-  //   screenshot:
-  //     "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Random_Recipe_Generator/Screenshot1.png?raw=true",
-  //   technologies: [
-  //     "Vue.js 2",
-  //     "Vuetify.js 2",
-  //     "Vuex",
-  //     "Nuxt.js 2",
-  //     "JavaScript",
-  //     "Fetch API",
-  //   ],
-  //   githubLink: "https://github.com/naseem-shawarba/Random_Recipe_Generator",
-  //   deployedWebsite: "https://random-recipe-generator-dc70e.web.app/",
-  // },
+  {
+    title: "Random Recipe Generator",
+    type: "personal",
+    description:
+      "Random Recipe Generator is a responsive web application that generates random recipes.",
+    screenshot:
+      "https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Random_Recipe_Generator/Screenshot1.png?raw=true",
+    technologies: [
+      "Vue.js 2",
+      "Vuetify.js 2",
+      "Vuex",
+      "Nuxt.js 2",
+      "JavaScript",
+      "Fetch API",
+    ],
+    githubLink: "https://github.com/naseem-shawarba/Random_Recipe_Generator",
+    deployedWebsite: "https://random-recipe-generator-dc70e.web.app/",
+  },
+  {
+    title: "Privacy Policy Creator",
+    type: "personal",
+    description:
+      "This Website enables users to create and modify privacy policies. The platform offers the ability to generate machine-readable privacy policies in JSON-LD format and natural language policies in English. Users can manage their data practices through a convenient table and utilize a form with text fields and dropdown menus to add or edit these practices. Exported privacy policies can be imported later for further modifications.",
+    screenshot: "",
+    technologies: [
+      "Vue.js 2",
+      "Vuetify.js 2",
+      "Nuxt.js 2",
+      "JavaScript",
+    ],
+    githubLink:"",
+    deployedWebsite: "",
+  },
   {
     title: "SMTP Server Lite",
     type: "personal",
@@ -161,11 +210,33 @@ export default [
     deployedWebsite: "",
   },
   {
+    title: "Distributed Message Sequencer",
+    type: "personal",
+    description:
+      "The message sequencer provides a centralized solution for managing messages in the distributed system, ensuring consistent order across multiple threads without relying on physical clocks.",
+    screenshot: "",
+    technologies: ["Java", "Threads", "Concurrent Programming", "Blocking Queue"],
+    githubLink:
+      "https://github.com/naseem-shawarba/Distributed_Message_Sequencer",
+    deployedWebsite: "",
+  },
+  {
+    title: "Distributed Lamport Timestamps Messaging",
+    type: "personal",
+    description:
+      "Lamport Timestamps are employed to achieve total ordering of messages without dependency on physical clocks or centralized architectures (e.g. Message Sequencer).",
+    screenshot: "",
+    technologies: ["Java", "Threads", "Concurrent Programming", "Blocking Queue"],
+    githubLink:
+      "https://github.com/naseem-shawarba/Distributed_Lamport_Timestamps_Messaging",
+    deployedWebsite: "",
+  },
+  {
     title: "TRAZPEZE Dashboard",
     type: "work",
     description:
       "Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
-    screenshot: "https://api.pikwy.com/web/6659c3243e077f2d7f045ca4.jpg",
+    screenshot: "https://pbs.twimg.com/media/Fui_-jMX0AAuCpB?format=jpg&name=900x900",
     technologies: ["Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript"],
     githubLink: "",
     deployedWebsite: "https://dashboard.trapeze-project.eu/",
@@ -181,5 +252,5 @@ export default [
     githubLink: "https://github.com/trapeze-project/trapeze-mobile",
     deployedWebsite:
       "https://github.com/trapeze-project/trapeze-mobile/releases",
-  },
+  }
 ];
