@@ -18,12 +18,20 @@
           :start="1000"
         />
       </div>
-      <div>
+      <div class="d-flex flex-wrap justify-center">
         <v-btn
           color="blue-darken-4"
           variant="outlined"
           rounded
-          class="mx-3"
+          class="ma-3"
+          :to="{ path: '/', hash: '#about-me' }"
+          >About me</v-btn
+        >
+        <v-btn
+          color="blue-darken-4"
+          variant="outlined"
+          rounded
+          class="ma-3"
           :to="{ path: '/', hash: '#projects' }"
           >Projects</v-btn
         >
@@ -31,7 +39,7 @@
           variant="outlined"
           rounded
           color="blue-darken-4"
-          class="mx-3"
+          class="ma-3"
           :to="{ path: '/', hash: '#contact' }"
           >Contact</v-btn
         >
