@@ -8,6 +8,11 @@ export default defineNuxtPlugin(nuxtApp => {
     ssr: true,
     components,
     directives,
+    defaults: {
+      VBtn: {
+        class: 'text-none'
+      }
+    }
   })
 
   nuxtApp.vueApp.use(vuetify)
