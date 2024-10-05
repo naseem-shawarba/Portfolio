@@ -25,7 +25,7 @@
           rounded
           class="ma-3"
           :to="{ path: '/', hash: '#about-me' }"
-          >About me</v-btn
+          >About Me</v-btn
         >
         <v-btn
           color="blue-darken-4"
