@@ -41,6 +41,12 @@ export default {
 		if (this.$route.query?.tab) {
 			this.tab = this.$route.query.tab
 		}
+		if(process.env.NODE_ENV !== "development"){
+			fetch("https://test-5a605-default-rtdb.firebaseio.com/projects.json")
+			.then(response=> response.json())
+			// .then(data => this.projects = data) // to-do add projects to database
+			.catch(error => console.error('Error:', error));
+		}
 	}
 };
 </script>
