@@ -43,8 +43,27 @@
           :to="{ path: '/', hash: '#contact' }"
           >Contact</v-btn
         >
-      </div>
+      </div>  
     </div>
+    <nuxt-link class="chevron-container" :to="{ path: '/', hash: '#about-me' }">
+      <v-icon  color="blue-lighten-2" :size="60">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 12"
+          width="100%"
+          height="100%"
+          class="custom-v-shape"
+        >
+          <path
+            d="M2 4 L8 10 L14 4"
+            stroke="currentColor"
+            stroke-width="0.6"
+            fill="none"
+          />
+        </svg>
+      </v-icon>
+    </nuxt-link>
+    
   </section>
 </template>
 
@@ -121,6 +140,12 @@ export default {
 </script>
 
 <style>
+.chevron-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .is-typed span.underscore {
   display: inline-flex;
   width: 10px;
