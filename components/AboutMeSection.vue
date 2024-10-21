@@ -34,7 +34,9 @@
 					<v-card class="mb-3 ml-4" color="grey-lighten-3" :elevation="0" v-for="category in Object.keys(skills)">
 						<v-card-title class="font-weight-bold text-h5">{{category}}</v-card-title>
 						<div class="d-flex flex-wrap ml-4 mb-3">
-							<img class="ma-1 rounded-lg" v-for="skill in skills[category]" :src="skill.link" :alt="skill.name" :key="skill.name"/>
+							<div v-for="skill in skills[category]" :key="skill.name" class="ma-1 skill-image" :class="{ highlight: skill.isHighlighted }" >
+								<img   :src="skill.link" :alt="skill.name" class="rounded-lg"/>
+							</div>
 						</div>
 					</v-card>
 				</v-card>
@@ -63,3 +65,27 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.skill-image {
+    position: relative; /* Required for absolute positioning of the ::after element */
+    display: inline-block; /* Ensures it stays inline */
+}
+
+.skill-image.highlight::after {
+    content: ""; /* Required for the pseudo-element to appear */
+    position: absolute; /* Positioning relative to the .highlight element */
+    right: 0;
+	width: 20px;
+	aspect-ratio: 1;
+  	background: rgba(248, 202, 0, 0.9);
+  	clip-path: polygon(50% 0,
+		calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+		calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+		calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+		calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+	);
+	transform: translate(45%, -45%);
+	z-index: 99;
+}
+</style>
