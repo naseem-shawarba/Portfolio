@@ -11,3 +11,20 @@
 
 	</div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    // ensures that the Vue instance has finished updating the DOM before you try to find and scroll to the section.
+    this.$nextTick(() => {
+      const hash = this.$route.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    });
+  }
+};
+</script>
