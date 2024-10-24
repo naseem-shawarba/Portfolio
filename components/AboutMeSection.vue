@@ -3,7 +3,7 @@
 		<SectionTitle title="🧑‍💻 About Me" />
 		<v-container>
 			<v-row align="center" justify="center" no-gutters>
-				<v-col xs="12" md="12" lg="6" xl="6" xxl="65">
+				<v-col cols="12" sm="6" md="6" lg="6" xl="6" xxl="6">
 					<v-card :elevation="0">
 						<v-card-title class="font-weight-bold text-h3 text-wrap">{{title}}</v-card-title>
 						<v-card-text class="text-subtitle-1" v-for="(paragraph, index) in paragraphs" :key="index">{{paragraph}}</v-card-text>
@@ -22,7 +22,7 @@
 						</v-card-actions>
 					</v-card>
 				</v-col>
-				<v-col xs="12" md="12" lg="6" xl="6" xxl="6">
+				<v-col class="d-none d-sm-block" cols="12" sm="6" md="6" lg="6" xl="6" xxl="6">
 					<v-card class="ml-4" :elevation="0">
 						<v-img src="~/assets/coderFlipped.png" eager/>
 					</v-card>
