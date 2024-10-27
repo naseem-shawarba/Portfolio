@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<v-hover v-slot="{ isHovering, props }" close-delay="150">
-			<v-card :href="project.deployedWebsite" target="_blank" style="border-radius: 13px" :class="['ma-3', { 'on-hover': isHovering }]"
+			<v-card :href="project.deployedWebsite" target="_blank" style="border-radius: 13px" class="position-relative"  :class="['ma-3', { 'on-hover': isHovering }]"
 				:elevation="isHovering ? 16 : 2" v-bind="props">
 
 				<div v-if="project.screenshot">
@@ -17,6 +17,9 @@
 							/>
 						</div>
 					</div>
+				</div>
+				<div v-if="project.companyName" class="position-absolute top-0 right-0">
+					<CompanyBadge :companyName="project.companyName" :companyLogoUrl="project.companyLogoUrl"/>
 				</div>
 				<v-card-title class="pt-3 text-wrap">
 					{{ project.title }}
@@ -64,4 +67,13 @@ export default {
 .v-card:hover {
 	transform: scale(1.02);
 }
+.Company-Bagde{
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    color: #fff; /* White text for contrast */
+	border-radius: 0 0 0 5px;
+	
+	
+}
+
+
 </style>
