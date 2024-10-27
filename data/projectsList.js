@@ -234,16 +234,21 @@ export default [
   {
     title: "TRAZPEZE Dashboard",
     type: "work",
+    companyName:"SNET",
+    companyLogoUrl:"",
     description:
       "Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
     screenshot: "https://pbs.twimg.com/media/Fui_-jMX0AAuCpB?format=jpg&name=900x900",
-    technologies: ["Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript"],
+    technologies: ["Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript", "Node.js", "MongoDB"],
     githubLink: "",
     deployedWebsite: "https://dashboard.trapeze-project.eu/",
   },
   {
     title: "TRAZPEZE Mobile App",
     type: "work",
+    companyName:"SNET",
+    companyLogoUrl:"",
+    companyLogo:"",
     description:
       "The TRAPEZE Mobile App, available for Android devices, scans for malware, offering guidance on resolving and preventing such threats.",
     screenshot:
