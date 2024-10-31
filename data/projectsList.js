@@ -37,6 +37,33 @@ export default [
     deployedWebsite: "https://random-recipe-generator-v2.web.app/",
   },
   {
+    title: "TRAZPEZE Dashboard",
+    type: "work",
+    companyName:"SNET",
+    companyLogoUrl:"",
+    description:
+      "Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
+    screenshot: "https://pbs.twimg.com/media/Fui_-jMX0AAuCpB?format=jpg&name=900x900",
+    technologies: ["Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript", "Node.js", "MongoDB"],
+    githubLink: "",
+    deployedWebsite: "",// https://dashboard.trapeze-project.eu/
+  },
+  {
+    title: "TRAZPEZE Mobile App",
+    type: "work",
+    companyName:"SNET",
+    companyLogoUrl:"",
+    companyLogo:"",
+    description:
+      "The TRAPEZE Mobile App, available for Android devices, scans for malware, offering guidance on resolving and preventing such threats.",
+    screenshot:
+      "https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
+    technologies: ["Flutter", "Dart"],
+    githubLink: "https://github.com/trapeze-project/trapeze-mobile",
+    deployedWebsite:
+      "https://github.com/trapeze-project/trapeze-mobile/releases",
+  },
+  {
     title: "Movie Look Up",
     type: "personal",
     description:
@@ -230,32 +257,5 @@ export default [
     githubLink:
       "https://github.com/naseem-shawarba/Distributed_Lamport_Timestamps_Messaging",
     deployedWebsite: "",
-  },
-  {
-    title: "TRAZPEZE Dashboard",
-    type: "work",
-    companyName:"SNET",
-    companyLogoUrl:"",
-    description:
-      "Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
-    screenshot: "https://pbs.twimg.com/media/Fui_-jMX0AAuCpB?format=jpg&name=900x900",
-    technologies: ["Vue.js 2", "Vuetify.js 2", "Nuxt.js 2", "JavaScript", "Node.js", "MongoDB"],
-    githubLink: "",
-    deployedWebsite: "https://dashboard.trapeze-project.eu/",
-  },
-  {
-    title: "TRAZPEZE Mobile App",
-    type: "work",
-    companyName:"SNET",
-    companyLogoUrl:"",
-    companyLogo:"",
-    description:
-      "The TRAPEZE Mobile App, available for Android devices, scans for malware, offering guidance on resolving and preventing such threats.",
-    screenshot:
-      "https://github.com/trapeze-project/trapeze-mobile/blob/master/screenshots/put-all-screenshots-together.png?raw=true",
-    technologies: ["Flutter", "Dart"],
-    githubLink: "https://github.com/trapeze-project/trapeze-mobile",
-    deployedWebsite:
-      "https://github.com/trapeze-project/trapeze-mobile/releases",
   }
 ];
