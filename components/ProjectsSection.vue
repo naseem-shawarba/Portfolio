@@ -21,7 +21,7 @@ export default {
 
 	data: () => {
 		return {
-			tabValues: ['personal', 'work'],
+			tabValues: ['all','personal', 'work'],
 			tab: null,
 			githubProfile: "https://github.com/naseem-shawarba",
 			projects: projectsList,
@@ -32,6 +32,7 @@ export default {
 			const personalProjects = this.projects.filter((project) => project.type === "personal")
 			const workProjects = this.projects.filter((project) => project.type === "work")
 			return {
+				"all": this.projects,
 				"personal": personalProjects,
 				"work": workProjects
 			}
@@ -47,7 +48,7 @@ export default {
 			// .then(data => this.projects = data) // to-do add projects to database
 			.catch(error => console.error('Error:', error));
 		}
-	}
+	},
 };
 </script>
 
@@ -61,4 +62,9 @@ export default {
 .titleAnchor:hover {
 	color: blue
 }
+
+.v-tab {
+text-transform: capitalize !important;
+}
+
 </style>
