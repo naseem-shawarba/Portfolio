@@ -5,12 +5,15 @@
 		</SectionTitle>
 		<p class="position-absolute font-weight-thin font-italic text-medium-emphasis" style="margin-top: -4px; margin-left: 38px;"> Total: {{ projects.length }}</p>
 		<v-tabs v-model="tab" align-tabs="center" color="deep-purple-accent-4">
-			<v-tab v-for="value in tabValues" :key="value" :value="value">{{ value }}</v-tab>
+			<v-tab v-for="tabItem in tabItems" :key="tabItem.name" :value="tabItem.name">
+				<v-icon :icon="tabItem.icon" class="mr-1"></v-icon>
+				{{ tabItem.name }}
+			</v-tab>
 		</v-tabs>
 
 		<v-tabs-window v-model="tab" >
-			<v-tabs-window-item class="mx-6 mt-3" v-for="value in tabValues" :key="value" :value="value">
-				<ProjectsView :projects="categorizedProjects[value]"/>
+			<v-tabs-window-item class="mx-6 mt-3" v-for="tabItem in tabItems" :key="tabItem.name" :value="tabItem.name">
+				<ProjectsView :projects="categorizedProjects[tabItem.name]"/>
 			</v-tabs-window-item>
 		</v-tabs-window>
 	</section>
@@ -21,7 +24,11 @@ export default {
 
 	data: () => {
 		return {
-			tabValues: ['all','personal', 'work'],
+			tabItems: [
+				{ name: 'all', icon: 'mdi-hexagon-multiple' },
+				{ name: 'personal', icon: 'mdi-account' },
+				{ name: 'work', icon: 'mdi-domain' }
+			],
 			tab: null,
 			githubProfile: "https://github.com/naseem-shawarba",
 			projects: projectsList,
@@ -42,7 +49,8 @@ export default {
 		if (this.$route.query?.tab) {
 			this.tab = this.$route.query.tab
 		}
-		if(process.env.NODE_ENV !== "development"){
+		console.log(!this.$route.query.debug)
+		if(process.env.NODE_ENV !== "development" && !this.$route.query.debug){
 			fetch("https://test-5a605-default-rtdb.firebaseio.com/projects.json")
 			.then(response=> response.json())
 			// .then(data => this.projects = data) // to-do add projects to database

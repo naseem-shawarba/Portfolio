@@ -18,8 +18,8 @@
 						</div>
 					</div>
 				</div>
-				<div v-if="project.companyName" class="position-absolute top-0 right-0">
-					<CompanyBadge :companyName="project.companyName" :companyLogoUrl="project.companyLogoUrl"/>
+				<div class="position-absolute top-0 right-0">
+					<ProjectContactBadge :type="project.type" :contactName="project.contactName" :logoUrl="project.logoUrl"/>
 				</div>
 				<v-card-title class="pt-3 text-wrap">
 					{{ project.title }}

@@ -1,11 +1,15 @@
 <template>
-  <div class="company-badge pb-2 pl-3 pr-2 d-flex">
+  <div class="badge pb-2 pl-3 pr-2 d-flex">
     <div class="curved-corner-topleft"></div>
-    <div class="Company-Logo align-self-end">
-      <v-img v-if="companyLogoUrl" class="mt-1" :src="companyLogoUrl" width="35" cover></v-img>
-      <v-icon v-else style="padding-top: 5px" icon="mdi-domain" :size="22"></v-icon>
+    <div class="align-self-end">
+      <v-img v-if="logoUrl" class="mt-1" :src="logoUrl" width="35" cover></v-img>
+      <div v-else >
+        <v-icon v-if="type === 'work'" class="Mdi-Logo" icon="mdi-domain" :size="22" />
+        <v-icon v-else-if="type === 'personal'" class="Mdi-Logo" icon="mdi-account" :size="22" />
+        <v-icon v-else class="Mdi-Logo" icon="mdi-help" :size="22" />
+      </div>
     </div>
-    <div class="ml-1 company-name align-self-end">{{ companyName }}</div>
+    <div class="ml-1 name align-self-end">{{ contactName }}</div>
     <div class="curved-corner-bottomright"></div>
   </div>
 </template>
@@ -13,14 +17,15 @@
 <script>
 export default {
   props: {
-    companyName: String,
-    companyLogoUrl: String,
+    type: String,
+    contactName: String,
+    logoUrl: String,
   },
 };
 </script>
 
 <style scoped>
-.company-badge {
+.badge {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 0 0 0 10px;
@@ -69,8 +74,11 @@ export default {
   }
 }
 
-.company-name {
+.name {
   line-height: 24px;
   height: 18px;
+}
+.Mdi-Logo{
+  padding-top: 5px
 }
 </style>
