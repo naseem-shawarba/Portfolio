@@ -39,8 +39,8 @@ export default [
   {
     title: "TRAZPEZE Dashboard",
     type: "work",
-    companyName:"SNET",
-    companyLogoUrl:"",
+    contactName:"SNET",
+    logoUrl:"",
     description:
       "Web frontend enabling citizens to provide, modify, or withdraw their consent via the TRAPEZE platform.",
     screenshot: "https://pbs.twimg.com/media/Fui_-jMX0AAuCpB?format=jpg&name=900x900",
@@ -51,8 +51,8 @@ export default [
   {
     title: "TRAZPEZE Mobile App",
     type: "work",
-    companyName:"SNET",
-    companyLogoUrl:"",
+    contactName:"SNET",
+    logoUrl:"",
     companyLogo:"",
     description:
       "The TRAPEZE Mobile App, available for Android devices, scans for malware, offering guidance on resolving and preventing such threats.",
