@@ -62,7 +62,7 @@ export default {
 }
 
 .v-card:hover {
-	transform: scale(1.02);
+	transform: scale(1.028);
 	box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.12) !important;
 }
 .Company-Bagde{
