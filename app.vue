@@ -1,13 +1,13 @@
 <template>
-  <v-app>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </v-app>
+	<v-app>
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</v-app>
 </template>
 
 <script setup>
 useSeoMeta({
-  title: 'Naseem | Portfolio',
-})
+	title: "Naseem | Portfolio"
+});
 </script>

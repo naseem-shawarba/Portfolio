@@ -12,7 +12,6 @@
 					Copyright &copy; {{ new Date().getFullYear() }} Naseem Shawarba
 				</v-card-text>
 			</v-card>
-
 		</v-footer>
 	</div>
 </template>
