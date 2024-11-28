@@ -7,7 +7,7 @@
 		</SectionTitle>
 		<p
 			class="position-absolute font-weight-thin font-italic text-medium-emphasis"
-			style="margin-top: -4px; margin-left: 38px"
+			style="margin-top: -4px; margin-left: 30px"
 		>
 			Total: {{ projects.length }}
 		</p>
