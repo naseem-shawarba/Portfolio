@@ -8,15 +8,22 @@
 			</div>
 			<h3 class="mb-2 text-blue-grey-darken-1">{{ title }}</h3>
 			<div class="mb-4">
-				<VueWriter
-					class="font-weight-bold text-h4"
-					:array="messages"
-					:typeSpeed="130"
-					:eraseSpeed="100"
-					caret="underscore"
-					:delay="2000"
-					:start="1000"
-				/>
+				<ClientOnly fallbackTag="span">
+					<VueWriter
+						class="font-weight-bold text-h4"
+						:array="messages"
+						:typeSpeed="130"
+						:eraseSpeed="100"
+						caret="underscore"
+						:delay="2000"
+						:start="1000"
+					/>
+					<template #fallback>
+						<div class="is-typed font-weight-bold text-h4">
+							<span class="underscore">&nbsp;</span>
+						</div>
+					</template>
+				</ClientOnly>
 			</div>
 			<div class="d-flex flex-wrap justify-center">
 				<v-btn
