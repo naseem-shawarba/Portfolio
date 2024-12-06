@@ -78,7 +78,7 @@ export default {
 	data() {
 		return {
 			paragraphs: [
-				"I’m Naseem Shawarba,  a full-stack web developer based in Berlin with 2+ years of professional experience creating applications that live on the internet. I hold a degree in computer science from Technische Universität Berlin and have a passion for building digital products that make everyday life easier.",
+				"I’m Naseem Shawarba,  a full-stack web developer based in Berlin with 3+ years of professional experience creating applications that live on the internet. I hold a degree in computer science from Technische Universität Berlin and have a passion for building digital products that make everyday life easier.",
 				// "In my free time, I enjoy working on side projects and diving into new technologies to continuously expand my skillset. I thrive on tackling challenges and love being part of creative teams where I can collaborate and grow.",
 				"I’m currently looking for opportunities to join a team of like-minded and creative professionals."
 			],
