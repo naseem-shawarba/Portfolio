@@ -11,15 +11,20 @@
 		>
 			<div v-if="project.screenshot">
 				<div>
-					<v-img @load="isImageLoaded = true" :src="project.screenshot" />
-				</div>
-				<div v-if="!isImageLoaded" style="height: 27vh">
-					<div class="d-flex align-center justify-center fill-height">
-						<v-progress-circular
-							align-self-center
-							color="grey-lighten-5"
-							indeterminate
-						/>
+					<img
+						v-show="isImageLoaded"
+						class="project-image"
+						@load="isImageLoaded = true"
+						:src="project.screenshot"
+					/>
+					<div v-if="!isImageLoaded" class="project-image">
+						<div class="d-flex align-center justify-center fill-height">
+							<v-progress-circular
+								align-self-center
+								color="grey-lighten-5"
+								indeterminate
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -108,5 +113,10 @@ export default {
 	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
 	color: #fff; /* White text for contrast */
 	border-radius: 0 0 0 5px;
+}
+
+.project-image {
+	width: 100%;
+	aspect-ratio: 2.13 / 1; /* Equivalent to height being 40% of the width */
 }
 </style>
