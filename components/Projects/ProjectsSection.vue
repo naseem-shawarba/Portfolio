@@ -1,5 +1,5 @@
 <template>
-	<section id="projects" style="min-height: 1200px">
+	<section id="projects" style="min-height: 900px">
 		<SectionTitle title="🚀 Projects">
 			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor"
 				>Visit Github</a
