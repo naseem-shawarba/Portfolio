@@ -8,7 +8,7 @@ export default [
 			"https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Cinema_Movies/Screenshot1.png?raw=true",
 		technologies: [
 			"React.js 18",
-			"Material UI (MUI)",
+			"MUI",
 			"Tailwind CSS",
 			"Recoil",
 			"Next.js 14",
@@ -161,7 +161,7 @@ export default [
 		title: "Portfolio",
 		type: "personal",
 		description:
-			"This portfolio includes information about my background and skills, showcases the projects I've worked on, and provides ways to connect with me. Please note that the website is still under construction.",
+			"The portfolio highlights my background, skills, projects, and contact options. Note: The website is under construction.",
 		screenshot:
 			"https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/Portfolio/Screenshot1.png?raw=true",
 		technologies: ["Vue.js 3", "Vuetify.js 3", "Nuxt.js 3", "TypeScript"],

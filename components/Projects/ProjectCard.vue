@@ -38,10 +38,10 @@
 			<v-card-title class="pt-3 text-wrap">
 				{{ project.title }}
 			</v-card-title>
-			<v-card-subtitle class="pb-0 text-wrap mb-2">
+			<v-card-subtitle class="pb-0 text-wrap mb-2" :class="{ 'subtitle-with-extra-space': project.screenshot }">
 				{{ project.description }}
 			</v-card-subtitle>
-			<div class="d-flex flex-wrap mb-1">
+			<div class="d-flex flex-wrap mb-1 position-relative" 	:class="{ 'technologies-with-extra-space': project.screenshot }">
 				<v-chip
 					v-for="technologie in project.technologies"
 					:key="technologie"
@@ -50,7 +50,7 @@
 				>
 					{{ technologie }}
 				</v-chip>
-				<span class="ml-auto mt-1">
+				<span class="position-absolute bottom-0 right-0">
 					<v-btn
 						v-if="project.deployedWebsite"
 						class="ml-4 mr-2"
@@ -119,4 +119,13 @@ export default {
 	width: 100%;
 	aspect-ratio: 2.13 / 1; /* Equivalent to height being 40% of the width */
 }
+
+.subtitle-with-extra-space {
+  height: 70px;
+}
+
+.technologies-with-extra-space {
+  height: 80px;
+}
+
 </style>
