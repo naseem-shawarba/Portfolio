@@ -1,17 +1,38 @@
 <template>
 	<div>
 		<v-footer :absolute="false" app>
-			<!-- <div style="width:100%" >
-				<v-btn v-for="account in accounts" :key="account.title" :icon="account.icon" :href="account.link"
-					target="_blank" class="mx-4" color="white" />
+			<div style="text-align: center; width: 100%">
+				<p>Copyright &copy; {{ currentYear }} Naseem Shawarba</p>
+				<p>
+					Built with
+					<a href="https://vuejs.org/" target="_blank">Vue</a>,
+					<a href="https://vuetifyjs.com/en/" target="_blank">Vuetify</a> and
+					<a href="https://nuxt.com/" target="_blank">Nuxt</a>.
+				</p>
 			</div>
-			<div style="border: 2px solid black;  width: 100%;" class="text-center">Copyright &copy; {{ new Date().getFullYear() }} Naseem Shawarba
-			</div> -->
-			<v-card width="100%" class="text-center" :elevation="0">
-				<v-card-text>
-					Copyright &copy; {{ new Date().getFullYear() }} Naseem Shawarba
-				</v-card-text>
-			</v-card>
 		</v-footer>
 	</div>
 </template>
+
+<script>
+export default {
+	computed: {
+		currentYear() {
+			return new Date().getFullYear();
+		}
+	}
+};
+</script>
+
+<style scoped>
+a {
+	color: #8a2be2;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #551a8b;
+	text-decoration: underline;
+}
+</style>
