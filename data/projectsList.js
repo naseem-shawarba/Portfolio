@@ -1,5 +1,26 @@
 export default [
 	{
+		title: "idealo",
+		type: "work",
+		contactName: "idealo",
+		logoUrl: "https://avatars.githubusercontent.com/u/5279123?s=200&v=4",
+		description:
+			"idealo GmbH is a leading price comparison platform based in Berlin, helping consumers find the best deals from thousands of retailers across Europe.",
+		screenshot:
+			"https://github.com/naseem-shawarba/Projects_Screenshots/blob/main/others/idealo/Screenshot1.png?raw=true",
+		technologies: [
+			"React.js",
+			"Next.js",
+			"CSS",
+			"TypeScript",
+			"Springboot",
+			"JEST",
+			"Cypress"
+		],
+		githubLink: "",
+		deployedWebsite: "https://www.idealo.de/"
+	},
+	{
 		title: "Cinema Movies",
 		type: "personal",
 		description:

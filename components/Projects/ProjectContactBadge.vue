@@ -4,10 +4,11 @@
 		<div class="align-self-end">
 			<v-img
 				v-if="logoUrl"
-				class="mt-1"
+				class="mr-n2"
+				style="margin-top: 5px; margin-bottom: -1px"
 				:src="logoUrl"
 				width="35"
-				cover
+				height="22"
 			></v-img>
 			<div v-else>
 				<v-icon
