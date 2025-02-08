@@ -8,7 +8,7 @@
 				style="margin-top: 5px; margin-bottom: -1px"
 				:src="logoUrl"
 				width="35"
-				height="22"
+				height="20"
 			></v-img>
 			<div v-else>
 				<v-icon
