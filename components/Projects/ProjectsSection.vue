@@ -29,7 +29,10 @@
 				:key="tabItem.name"
 				:value="tabItem.name"
 			>
-				<ProjectsView :projects="categorizedProjects[tabItem.name]" />
+				<ProjectsView
+					:projects="categorizedProjects[tabItem.name]"
+					:type="tabItem.name"
+				/>
 			</v-tabs-window-item>
 		</v-tabs-window>
 	</section>
