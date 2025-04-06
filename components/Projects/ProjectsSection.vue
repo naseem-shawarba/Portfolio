@@ -1,16 +1,18 @@
 <template>
 	<section id="projects" style="min-height: 900px">
-		<SectionTitle title="🚀 Projects">
-			<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor"
-				>Visit Github</a
+		<SectionTitle title="Projects" icon="🚀">
+			<template #link>
+				<a :href="githubProfile" target="_blank" class="ml-4 titleAnchor"
+					>Visit Github</a
+				></template
+			>
+			<template #subTitle>
+				<p class="font-weight-thin font-italic text-medium-emphasis">
+					Total: {{ projects.length }}
+				</p></template
 			>
 		</SectionTitle>
-		<p
-			class="position-absolute font-weight-thin font-italic text-medium-emphasis"
-			style="margin-top: -4px; margin-left: 30px"
-		>
-			Total: {{ projects.length }}
-		</p>
+
 		<v-tabs v-model="tab" align-tabs="center" color="deep-purple-accent-4">
 			<v-tab
 				v-for="tabItem in tabItems"

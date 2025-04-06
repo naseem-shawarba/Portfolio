@@ -1,6 +1,6 @@
 <template>
 	<section id="contact">
-		<SectionTitle title="📭 Contact" />
+		<SectionTitle icon="📭" title="Contact" />
 		<v-container>
 			<v-row align="center" justify="center" no-gutters>
 				<v-col xs="12" md="12" lg="5" xl="5" xxl="5">

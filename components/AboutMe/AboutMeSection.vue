@@ -1,11 +1,11 @@
 <template>
 	<section id="about-me">
-		<SectionTitle title="🧑‍💻 About Me" />
+		<SectionTitle icon="🧑‍💻" title="About Me" />
 		<v-container>
 			<v-row align="center" justify="center" no-gutters>
 				<v-col cols="12" sm="6" md="6" lg="6" xl="6" xxl="6">
 					<v-card :elevation="0">
-						<v-card-title class="font-weight-bold text-h3 text-wrap">{{
+						<v-card-title class="font-weight-bold text-h5 text-wrap">{{
 							title
 						}}</v-card-title>
 						<v-card-text
@@ -45,7 +45,7 @@
 			</v-row>
 			<v-row no-gutters>
 				<v-card :elevation="0" class="w-100">
-					<v-card-title class="font-weight-bold text-h3">Skills</v-card-title>
+					<v-card-title class="font-weight-bold text-h5">Skills</v-card-title>
 					<v-card
 						class="mb-3 ml-4"
 						color="grey-lighten-3"
@@ -53,7 +53,7 @@
 						v-for="category in Object.keys(skills)"
 						:key="category"
 					>
-						<v-card-title class="font-weight-bold text-h5">{{
+						<v-card-title class="font-weight-bold text-h6">{{
 							category
 						}}</v-card-title>
 						<div class="d-flex flex-wrap ml-4 mb-3">
